@@ -51,7 +51,7 @@ class Caltech(VisionDataset):
         # Check if in correct range
         if split in ("train", "test"):
             # Open file
-            with open(f"./{split}.txt", 'r') as f:
+            with open(f"Caltech/{split}.txt", 'r') as f:
                 for path in f.readlines():
                     path = path.strip("\n")
                     # Get the label from the path
